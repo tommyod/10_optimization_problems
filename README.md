@@ -1,5 +1,11 @@
 # 10_optimization_problems
-Slides and source code for presentation.
+Slides and source code (LaTeX and Python) for a presentation.
+
+### Speed dates with optimization problems - 10 problems in 10 minutes
+
+- Efficient algorithm exist for many problems.
+- Implementations of these algorithms are also available.
+- The remaining difficulty is often having enough prior knowledge to recognize a problem.
 
 ## Software used
 
