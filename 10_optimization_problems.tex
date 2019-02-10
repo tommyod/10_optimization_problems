@@ -35,9 +35,9 @@
 
 \usefonttheme{professionalfonts}
 \usepackage{fontspec}
-%\setmainfont{Open Sans}
-%\setsansfont{Open Sans}
-%\setmonofont{Ubuntu Mono}
+\setmainfont{Open Sans}
+\setsansfont{Open Sans}
+\setmonofont{Ubuntu Mono}
 \usefonttheme{serif}
 
 % https://tex.stackexchange.com/questions/115223/how-insert-male-and-female-symbol
@@ -88,7 +88,7 @@
 \setbeamercolor{date in head/foot}{fg=titlered}
 
 
-% Spacing for lsits
+% Spacing for lists
 \newcommand{\listSpace}{0.4em}
 
 % Theorems, equations, definitions setup
@@ -250,7 +250,6 @@ Solved using differentiation.
 			\text{subject to } \quad & g_i(\mathbf{x}) = 0\\
 			 & i=1,2,\ldots
 			\end{align*}
-			Solved using differentiation in $\mathcal{O}(1)$.
 		\end{column}
 		\begin{column}{0.4\textwidth}%
 			\vspace*{-10em}
@@ -270,8 +269,8 @@ Solved using differentiation.
 		\begin{column}{0.6\textwidth}
 			\textbf{Introduction}\\ \vspace*{0.5em} 
 			
-			A company wants equal exposure to 4 sub-populations.
-			Given 2 advertisement channels and their associated reach units of $\text{views} / \text{dollar}$, create an optimal budget.
+			We want equal exposure to 4 segments.
+			Given 2 advertisement channels and their associated reach in units of $\text{views} / \text{dollar}$, allocate the money.
 			\begin{equation*}
 				\begin{pmatrix}
 				5\\ 
@@ -614,8 +613,7 @@ Solved using differentiation.
 			\textbf{Problem generalization}
 			\\
 			\vspace*{0.5em}
-			This is the \emph{assignment problem}, solved by the Hungarian algorithm.
-			Solved in $\mathcal{O}(n^3)$ time, not $\mathcal{O}(n!)$.
+			This is the \emph{assignment problem}, solved in $\mathcal{O}(n^3)$ time, not $\mathcal{O}(n!)$.
 		\end{column}
 		\begin{column}{0.45\textwidth}%
 			\textbf{Solution}
@@ -673,7 +671,7 @@ Solved using differentiation.
 					$x_3$ milk & $p_3$ & 12 & 40 \\ \bottomrule
 				\end{tabular}
 			\end{center}
-			{\scriptsize The numbers above are fictitious.}
+			{\tiny The numbers above are fictitious.}
 			\normalsize
 				\vspace*{0em}
 				\begin{figure}
@@ -720,7 +718,7 @@ Solved using differentiation.
 			\textbf{Problem generalization}
 			\\
 			\vspace*{0.5em}
-			This is the \emph{linear programming} problem. 
+			This is a \emph{linear program}. 
 			Efficient algorithms exist.
 			\begin{align*}
 			\text{minimize } \quad & \mathbf{p}^T \mathbf{x}  \\
@@ -785,7 +783,8 @@ Solved using differentiation.
 		\end{column}
 		\begin{column}{0.5\textwidth}%
 			\textbf{Problem generalization} \\ \vspace*{0.5em} 
-			The solution technique is called \emph{dynamic programming}, and depends on an \emph{optimal substructure} property.
+			The solution technique is called \emph{dynamic programming} (DP).
+			To use DP, we must (1) identify a recursive relationship, (2) define initial conditions and (3) solve problems in correct order.
 		\end{column}
 	\end{columns}
 	
@@ -793,8 +792,6 @@ Solved using differentiation.
 			\centering
 			\includegraphics[width=1\linewidth]{figs/hotel_problem_instance_large_solution.pdf}
 		\end{figure}
-		\vspace*{-1em}
-		{\small To apply dynamic programming we must (1) identify recursive relationship, (2) define initial conditions and (3) solve problems in correct order.}
 \end{frame}
 
 
@@ -841,7 +838,9 @@ Solved using differentiation.
 			\textbf{Problem generalization}
 			\\
 			\vspace*{0.5em} 
-			When we have a (1) non-differentiable function with (2) a vast search space and (3) a notion of neighborhoods, use \emph{simulated annealing} to balance exploitation and exploration.
+			\emph{Simulated annealing} balances exploitation and exploration. \\
+			Widely applicable meta-heuristic.
+			%When we have a (1) non-differentiable function with (2) a vast search space and (3) a notion of neighborhoods, use \emph{simulated annealing} to balance exploitation and exploration.
 		\end{column}
 		\begin{column}{0.45\textwidth}%
 	\begin{figure}
@@ -955,7 +954,6 @@ Solved using differentiation.
 	\small
 	\begin{easylist}[itemize]
 		\ListProperties(Space=\listSpace, Space*=\listSpace)
-		
 		# Strang, Gilbert. \emph{Introduction to Applied Mathematics}. Wellesley, Mass: Wellesley-Cambridge Press, 1986.
 		 
 		## Chapter 3 -- ``The brachistochrone problem''
@@ -970,7 +968,6 @@ Solved using differentiation.
 		# Dasgupta, Sanjoy, Christos H. Papadimitriou, and Umesh Virkumar. Vazirani. \emph{Algorithms}. Boston, Mass: McGraw Hill, 2008.
 		
 		## Chapter 6 -- ``The hotel problem''
-		
 	\end{easylist}
 	\normalsize
 \end{frame}
@@ -980,8 +977,6 @@ Solved using differentiation.
 	\small
 	\begin{easylist}[itemize]
 		\ListProperties(Space=\listSpace, Space*=\listSpace)
-		
-		
 		# Duda, Richard O., Peter E. Hart, and David G. Stork. \emph{Pattern Classification}. 2 edition. New York: Wiley-Interscience, 2000.
 		
 		## Chapter 7 -- ``The magnet problem''
@@ -995,7 +990,6 @@ Solved using differentiation.
 	\hrule
 	
 \begin{center}
-	
 	{\Large Thank you for your attention.} \\
 	\vspace*{1em}
 	Slides, \LaTeX{} source and Python code solving \\the problems and generating plots: \\
