@@ -35,9 +35,9 @@
 
 \usefonttheme{professionalfonts}
 \usepackage{fontspec}
-\setmainfont{Open Sans}
-\setsansfont{Open Sans}
-\setmonofont{Ubuntu Mono}
+%\setmainfont{Open Sans}
+%\setsansfont{Open Sans}
+%\setmonofont{Ubuntu Mono}
 \usefonttheme{serif}
 
 % https://tex.stackexchange.com/questions/115223/how-insert-male-and-female-symbol
@@ -136,7 +136,7 @@
 		\begin{column}{0.55\textwidth}
 	\begin{easylist}[itemize]
 		\ListProperties(Space=\listSpace, Space*=\listSpace)
-		# Efficient algorithm exist for many problems.
+		# Efficient algorithms exist for many problems.
 		# Implementations of these algorithms are also available.
 		# The remaining difficulty is often having enough prior knowledge to recognize a problem. 
 	\end{easylist}
@@ -271,7 +271,7 @@ Solved using differentiation.
 			\textbf{Introduction}\\ \vspace*{0.5em} 
 			
 			A company wants equal exposure to 4 sub-populations.
-			Given 2 advertisement channels and their associated reach units $\text{views} / \text{dollar}$, spend the money.
+			Given 2 advertisement channels and their associated reach units of $\text{views} / \text{dollar}$, create an optimal budget.
 			\begin{equation*}
 				\begin{pmatrix}
 				5\\ 
@@ -317,7 +317,7 @@ Solved using differentiation.
 			A = 
 			\begin{blockarray}{rcc}
 			& \text{tv} & \text{paper}  \\
-			\begin{block}{r(cc)}
+			\begin{block}{l(cc)}
 			\text{y \female}  & 5 &  2 \\
 			\text{y \mars}  & 4 &  3 \\
 			\text{o \female}  & 6 &  7 \\
@@ -383,7 +383,7 @@ Solved using differentiation.
 			\begin{pmatrix}
 			-0.7 \\ 
 			-1.8 \\ 
-			2.8 \\ 
+			\ \ 2.8 \\ 
 			-1.7
 			\end{pmatrix}
 			\end{equation*}
@@ -452,7 +452,7 @@ Solved using differentiation.
 			A = 
 			\begin{blockarray}{rcc}
 			& \text{tv} & \text{paper}  \\
-			\begin{block}{r(cc)}
+			\begin{block}{l(cc)}
 			\text{y \female}  & 5 &  2 \\
 			\text{y \mars}  & 4 &  3 \\
 			\text{o \female}  & 6 &  7 \\
@@ -550,7 +550,7 @@ Solved using differentiation.
 
 % -----------------------------------------------------------------------------
 
-\begin{frame}[fragile, t]{(5) The worker-assigment problem}
+\begin{frame}[fragile, t]{(5) The worker-assignment problem}
 	\begin{columns}
 		\begin{column}{0.6\textwidth}
 			\textbf{Introduction}\\ \vspace*{0.5em} 
@@ -580,7 +580,7 @@ Solved using differentiation.
 			C = 
 			\begin{blockarray}{rcccc}
 			& A & B & C & D  \\
-			\begin{block}{r(cccc)}
+			\begin{block}{l	(cccc)}
 			\text{ole}  & 5 &  6 & 1 &  6 \\
 			\text{åse}  & 4 &  5 & 0 &  1 \\
 			\text{dag}  & 1 &  2 & 6 &  8 \\
@@ -598,13 +598,11 @@ Solved using differentiation.
 				$50$ & $65$ \\ \bottomrule
 			\end{tabular}
 		\end{column}
-		
-		
 	\end{columns}
 \end{frame}
 
 
-\begin{frame}[fragile, t]{(5) The worker-assigment problem}
+\begin{frame}[fragile, t]{(5) The worker-assignment problem}
 	\begin{columns}
 		\begin{column}{0.55\textwidth}
 			\textbf{Problem instance}
@@ -625,7 +623,7 @@ Solved using differentiation.
 			C_{ij} \widehat{X}_{ij} = 
 			\begin{blockarray}{rcccc}
 			& A & B & C & D  \\
-			\begin{block}{r(cccc)}
+			\begin{block}{l(cccc)}
 			\text{ole}  & 5 &  6 & 1 &  \textcolor{titlered}{\mathbf{6}} \\
 			\text{åse}  & 4 &  \textcolor{titlered}{\mathbf{5}} & 0 &  1 \\
 			\text{dag}  & 1 &  2 & \textcolor{titlered}{\mathbf{6}} &  8 \\
@@ -653,7 +651,7 @@ Solved using differentiation.
 			{\small 
 			\begin{alignat*}{3}
 			\text{minimize } \quad & p_1 x_1 + p_2 x_2 + p_3 x_3 && \\
-			\text{subject to } \quad & 16 x_1 + 5 x_2 + 12 x_3 && \geq 100 \\
+			\text{subject to } \quad & 16 x_1 + 5 x_2 + 12 x_3 && \geq 100 \\ % Synes egentlig x1, x2 og x3 skulle vært aligned nedover
 			\quad & 150 x_1 + 100 x_2 + 40 x_3 && \geq 2000 \\
 			\quad & 150 x_1 + 100 x_2 + 40 x_3 && \leq 2500
 			\end{alignat*}
@@ -682,10 +680,8 @@ Solved using differentiation.
 					\centering
 					\includegraphics[width=1\linewidth]{figs/foods.jpg}
 				\end{figure}
-			
 		\end{column}
 	\end{columns}
-
 \end{frame}
 
 
@@ -790,7 +786,6 @@ Solved using differentiation.
 		\begin{column}{0.5\textwidth}%
 			\textbf{Problem generalization} \\ \vspace*{0.5em} 
 			The solution technique is called \emph{dynamic programming}, and depends on an \emph{optimal substructure} property.
-			(1) Identity recursive relationship, (2) initial conditions and (3) solve problems in correct order.
 		\end{column}
 	\end{columns}
 	
@@ -799,7 +794,7 @@ Solved using differentiation.
 			\includegraphics[width=1\linewidth]{figs/hotel_problem_instance_large_solution.pdf}
 		\end{figure}
 		\vspace*{-1em}
-		{\small To apply dynamic programming we must (1) identity recursive relationship, (2) initial conditions and (3) solve problems in correct order..}
+		{\small To apply dynamic programming we must (1) identify recursive relationship, (2) define initial conditions and (3) solve problems in correct order.}
 \end{frame}
 
 
@@ -846,12 +841,12 @@ Solved using differentiation.
 			\textbf{Problem generalization}
 			\\
 			\vspace*{0.5em} 
-			When we have a (1) non-differentiable function with (2) a wast search space and (3) a notion of neighborhoods, use \emph{simulated annealing} to balance exploitation and exploration.
+			When we have a (1) non-differentiable function with (2) a vast search space and (3) a notion of neighborhoods, use \emph{simulated annealing} to balance exploitation and exploration.
 		\end{column}
 		\begin{column}{0.45\textwidth}%
 	\begin{figure}
 		\centering
-		\includegraphics[width=1.1\linewidth]{figs/simulated_annealing.pdf}
+		\includegraphics[width=1.1\linewidth]{figs/simulated_annealing.pdf} % What is the red dotted line?
 	\end{figure}
 		\end{column}
 	\end{columns}
@@ -917,7 +912,7 @@ Solved using differentiation.
 \begin{frame}[fragile, t]{(10) The brachistochrone problem}
 	\textbf{Introduction}\\ \vspace*{0.5em} 
 	
-	A \emph{functional} is a function from a function to real number.
+	A \emph{functional} is a function from a function to a real number.
 	\begin{equation*}
 		\text{functional} : \text{function} \to \text{real number}
 	\end{equation*}
