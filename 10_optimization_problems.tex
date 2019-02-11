@@ -161,7 +161,7 @@ Given a square piece of paper, cut the paper at a location $x$ to maximize the v
 \vspace*{1em}
 This problem can be formulated as
 \begin{align*}
-\text{minimize } \quad & V(x, s) = s^2 x  \\
+\text{minimize } \quad & -V(x, s) = -s^2 x  \\
 \text{subject to } \quad & 2x + s = L \\
 & s, x \geq 0.
 \end{align*}
@@ -181,7 +181,7 @@ This problem can be formulated as
 \begin{column}{0.55\textwidth}
 \textbf{Problem instance}
 \begin{align*}
-\text{minimize } \quad & V(x) = (L - 2x)^2 x  \\
+\text{minimize } \quad & -V(x) = -(L - 2x)^2 x  \\
 \text{subject to } \quad & x \geq 0 \\
 & x \leq L/2
 \end{align*}
