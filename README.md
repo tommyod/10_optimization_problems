@@ -1,4 +1,4 @@
-# 10_optimization_problems
+# 10_optimization_problems [[youtube](https://www.youtube.com/watch?v=sJ5HTi70wXo)]
 Slides and source code (LaTeX and Python) for a presentation.
 
 ### Speed dates with optimization problems - 10 problems in 10 minutes
